@@ -11,5 +11,5 @@ function setThisWithApply(fn, thisValue, args) {
 }
 
 function returnNewFunctionOf(fn, thisValue) {
-  return fn.prototype.call(thisValue)
+  return fn.prototype.call()
 }
