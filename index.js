@@ -11,5 +11,6 @@ function setThisWithApply(fn, thisValue, args) {
 }
 
 function returnNewFunctionOf(fn, thisValue) {
-  return fn.prototype.call()
+  let copy = fn.bind(thisValue);
+  return copy;
 }
